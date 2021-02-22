@@ -28,8 +28,8 @@ namespace RockPaperScissors
         {
             Random r = new Random();
             // 1, 2, or 3
-            int computerChoice = r.Next(1, 4);
-            return computerChoice;
+            int opcionCpu = r.Next(1, 4);
+            return opcionCpu;
         }
         static void Main(string[] args)
         {
@@ -41,8 +41,8 @@ namespace RockPaperScissors
            Console.WriteLine("Opcion seleccionada: " + option);
 
            //TODO: La computadora genera su opción a jugar de manera aleatoria (piedra, papel o tijera)
-           int computerChoice = ComputerChoice();
-           Console.WriteLine("La CPU selecciono: " + computerChoice);
+           int opcionCpu = ComputerChoice();
+           Console.WriteLine("La CPU selecciono: " + opcionCpu);
 
            //TODO: Determinar quién ganó de acuerdo a las opciones seleccionadas, y mostrar al ganador
 
